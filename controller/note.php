@@ -5,6 +5,7 @@ require_once 'model/note.php';
 class noteController{
 	public $page_title;
 	public $view;
+	private $noteObj;
 
 	public function __construct() {
 		$this->view = 'list_note';

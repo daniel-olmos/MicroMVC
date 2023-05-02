@@ -2,11 +2,11 @@
 
 class Note {
 
-	private $table = 'note';
+	private $table;
 	private $conection;
 
 	public function __construct() {
-		
+		$this->table = 'notes';
 	}
 
 	/* Set conection */
