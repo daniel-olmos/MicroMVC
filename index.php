@@ -20,9 +20,14 @@ $controller = new $controllerName();
 $dataToView["data"] = array();
 if(method_exists($controller,$_GET["action"])) $dataToView["data"] = $controller->{$_GET["action"]}();
 
-/* Load views */
-require_once 'view/template/header.php';
-require_once 'view/'.$controller->view.'.php';
-require_once 'view/template/footer.php';
+/* 05/03/2023 CDO> creo una validacion para usar este archivo con vistas y modales.
+Si se desea utilizar para descargas, se debe agregar una condicion mas para archivo tipo _download*/
+if (strpos($controller->view, "_view")):
+    require_once 'view/template/header.php';
+    require_once 'view/'.$controller->view.'.php';
+    require_once 'view/template/footer.php';
+else:
+    require_once 'view/'.$controller->view.'.php';
+endif;
 
 ?>
