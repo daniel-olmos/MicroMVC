@@ -20,7 +20,6 @@ $controller = new $controllerName();
 $dataToView["data"] = array();
 if(method_exists($controller,$_GET["action"])) $dataToView["data"] = $controller->{$_GET["action"]}();
 
-
 /* Load views */
 require_once 'view/template/header.php';
 require_once 'view/'.$controller->view.'.php';

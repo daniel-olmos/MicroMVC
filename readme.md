@@ -44,7 +44,7 @@ Además, mostraremos en el encabezado un título de página, que se cargará de 
 - view/template/footer.php
 El footer simplemente cerrará las etiquetas body y html, además del div que tiene la clase container y que abrimos en el header.
 
-## public/
+## public/ <sub>_opcional_</sub> 
 Archivos publicos del proyecto
 
 ## Features
