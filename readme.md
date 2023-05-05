@@ -72,4 +72,6 @@ Archivos publicos del proyecto
 ## Features
 
 - Se separan los parametros de base de datos, de los parametros de la aplicación.
+- Se crea logica para trabajar con vistas, modales, y descargas desde un mismo archivo
+
 
